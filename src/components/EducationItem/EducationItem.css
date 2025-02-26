@@ -1,0 +1,23 @@
+.EducationItem {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 19px;
+}
+
+.EducationItem:last-child {
+  margin-top: 20px;
+}
+
+.EducationItem__Title {
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.EducationItem__Description {
+  font-size: 12px;
+}
+
+.EducationItem__Recognition {
+  font-size: 12px;
+}

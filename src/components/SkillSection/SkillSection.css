@@ -1,0 +1,19 @@
+.SkillSection {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.SkillSection__Title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.SkillSection__SkillsContainer {  
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}

@@ -1,0 +1,25 @@
+.ExperienceItem {
+  font-size: 12px;
+  margin-bottom: 15px;
+  line-height: 19px;
+}
+
+.ExperienceItem__Title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.ExperienceItem__Position {
+  padding-left: 10px;
+}
+
+.ExperienceItem__RoleDescription {
+  padding-left: 10px;
+}
+
+
+.ExperienceItem__Recognition {
+  padding-left: 10px;
+  font-weight: 500;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('./constants.css');
+
+html {
+  font-family: 'Lexend', sans-serif;
+}
+
+body {
+  margin: 10px;
+}
+
+.Controls {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  display: flex;
+}
+
+.Controls__Control {
+  position: relative;
+  border: 1px solid var(--ocean-blue);
+  width: auto;
+  min-width: 25px;
+  height: 25px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  color: white;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.Controls__Control:hover {
+  background-color: var(--darker-blue);
+  color: white;
+}
+
+.Controls__Control:active {
+  background-color: var(--ocean-blue);
+  color: white;
+}
+
+.Controls__Dropdown {
+  position: absolute;
+  width: auto;
+  height: auto;;
+  top: 37px;
+  left: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.Controls__Dropdown__Item {
+  border: 1px solid var(--ocean-blue);
+  padding: 5px;
+  width: 85px;
+  height: 30px;
+  background-color: var(--dark-blue);
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.Controls__Dropdown__Item:hover {
+  background-color: var(--darker-blue);
+}
+
+.Controls__Dropdown__Item:active {
+  background-color: var(--ocean-blue);
+}
+
+.MainContainer {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  box-shadow: 0px 0px 12px black;
+}
+
+.MainContainer__box {
+  height: auto;
+  min-height: 90px;
+}
+
+.MainContainer__row {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.MainContainer__cell {
+  flex: 1 1 200px;
+  height: auto;
+}
+
+.Page {
+  position: relative;
+  display: flex;
+}
+
+.Content {
+  width: calc(100% - 250px);
+}
+
+.Content__Relocate {
+  position: relative;
+  top: 5px;
+}
+
+@media print {
+  body {
+    margin: 0px;
+  }
+
+  .Controls {
+    display: none;
+  }
+
+  .MainContainer {
+    max-width: none;
+    box-shadow: none;
+  }
+
+  .Page {
+    page-break-after: always;
+  }
+
+  .Content__Relocate {
+    top: 70px;
+  }
+}

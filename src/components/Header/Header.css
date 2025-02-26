@@ -1,0 +1,53 @@
+.HeaderComponent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 90px;
+  width: 100%;
+  height: 150px;
+  background-color: var(--dark-blue);
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.HeaderComponent__ProfilePicture {
+  position: absolute;
+  top: 22px;
+  left: 55px;
+  width: 130px;
+  height: 130px;
+  z-index: 2;
+}
+
+.HeaderComponent__Title {
+  position: absolute;
+  top: 22px;
+  left: 255px;
+}
+
+.HeaderComponent__Title h2{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.HeaderComponent__Title span{
+  font-size: 20px;
+}
+
+.HeaderComponent__Chevron {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-top: 60px solid var(--dark-blue);
+  z-index: 1;
+}
+
+@media print {
+  .HeaderComponent__Chevron {
+    top: 149px;
+  } 
+}

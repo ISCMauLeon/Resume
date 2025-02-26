@@ -1,0 +1,39 @@
+.ContacDetailsItem {
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: 19px;
+}
+
+.ContacDetailsItem__Icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 8px;
+  line-height: 22px;
+}
+
+.ContacDetailsItem__Description {
+  display: inline-block;
+}
+
+.ContacDetailsItem__Anchor:link,
+.ContacDetailsItem__Anchor:hover,
+.ContacDetailsItem__Anchor:active,
+.ContacDetailsItem__Anchor:visited {
+  color: black;
+}
+
+
+@media print {
+  .ContacDetailsItem__Anchor:link,
+  .ContacDetailsItem__Anchor:hover,
+  .ContacDetailsItem__Anchor:active,
+  .ContacDetailsItem__Anchor:visited {
+    text-decoration: none;
+  }
+}
